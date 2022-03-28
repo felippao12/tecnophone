@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>TecnoPhone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>TecnoPhone</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Conexion a CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="encabezado__box--white">
+        <p>Pedidos al 1587898454</p> <img src="../img/logos/whatsapp.png" width="30">
+    </div>
+    <nav class="botonera">
+        <a href="index.html">
+            <img src="../img//logos/logo.png" width="70px" alt="logo de tecnophone">
+        </a>
+
+        <ol>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+                <a href="../pages/productos.html">Productos</a>
+            </li>
+            <li>
+                <a href="../pages/empresa.html">Empresa</a>
+            </li>
+            <li>
+                <a href="../pages/contacto.html">Contacto</a>
+            </li>
+        </ol>
+    </nav>
+    <header>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1>Contacto</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores fugit odit necessitatibus in fugiat, ipsam, inventore nihil quo facilis atque aspernatur? Aspernatur corporis atque beatae amet eaque eligendi, corrupti sequi.</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorum possimus nobis debitis voluptate cupiditate est ab error, neque blanditiis odio nemo veniam id numquam earum quae officiis cumque! Temporibus?</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h1>¡Contactate con nosotros!</h1>
+                <!--Abre el formulario-->
+                <form action="envio.php" method="post" id="contacto">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <label for="nombre">Nombre y apellido</label>
+                        <input type="text" placeholder="Felipe Gutierrez Romero" name="Nombre" id="Nombre">
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="mail@mail.com" name="email" id="email">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de pedido</legend>
+                        <label for="productos">Productos</label>
+                        <input type="checkbox" name="productos" id="productos" value="productos">
+                        <br>
+                        <label for="productos2">Productos 2</label>
+                        <input type="checkbox" name="productos2" id="productos2" value="productos2">
+                    </fieldset>
+                    <fieldset>
+                        <legend> Información de envio</legend>
+                        <label for="envio">Retira en el local</label>
+                        <input type="radio" name="envio" id="local" value="local">
+                        <br>
+                        <label for="domicilio">Envio a domicilio</label>
+                        <input type="radio" name="envio" id="domicilio" value="domicilio">
+                        <br>
+                        <select name="localidad" id="localidad">
+                        <option value="montevideo">Montevideo</option>
+                        <option value="Paysandu">Paysandu</option>
+                        <option value="Salto">Salto</option>
+                    </select>
+                    </fieldset>
+                    <br>
+                    <label></label>
+        </section>
+
+
+    </main>
+    <!-- Comienza footer -->
+    <footer class="pie-pagina">
+        <div class="footer-top ">
+            <div class="container ">
+                <div class="row ">
+
+                    <div class="col-lg-3 col-md-6 ">
+                        <div class="footer-info ">
+                            <h3><img src="img/logos/logo_blanco.png " width="100 "> </h3>
+                            <p>
+                                Montevideo,<strong> UY</strong> <img src="img/logos/Uruguay_flags_flag_8829.png"> <br>
+                                <strong>Datos de contacto:</strong><br>
+                                <strong>Teléfono:</strong> +598 9160093<br>
+                                <strong>E-mail: </strong>contacto@webdesignfg.com<br>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" container ">
+                    <div class="copyright ">
+                        &copy; Copyright 2022 <strong><span>Tecno Phone</span></strong>. Todos los derechos reservados.
+                    </div>
+                </div>
+
+    </footer>
+
+    <!-- Termina footer -->
+</body>
