@@ -267,6 +267,14 @@ section#empresa {
     margin-bottom: 10px;
 }
 
+.dropdown-menu {
+    background-color: #009ffa;
+}
+
+.dropdown-item {
+    background-color: #009ffa;
+}
+
 .footer img {
     border-radius: 30px;
 }
@@ -339,22 +347,6 @@ section#empresa {
 
 
 /*selectores de clase*/
-
-nav {
-    position: sticky;
-    bottom: 70px;
-    left: 300px;
-}
-
-.navBackground {
-    background-color: rgb(4, 99, 91);
-    position: sticky;
-    top: 0px;
-}
-
-.navBackground img {
-    padding: 20px;
-}
 
 
 /*Box model - width- height - margin - padding - border*/
