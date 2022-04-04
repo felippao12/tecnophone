@@ -31,10 +31,14 @@ h2 {
 h3 {
     font-family: "Raleway" sans-serif;
     align-content: center;
+    animation-duration: 2s;
 }
 
 h4 {
     font-family: "Raleway" sans-serif;
+    text-align: center;
+    animation-duration: 2s;
+    padding-top: 40px;
 }
 
 h5 {
@@ -94,16 +98,11 @@ figcaption {
     margin: 5px;
 }
 
-
-/* Keyframes (Animaciones)*/
-
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.centerText {
+    align-items: center;
+    text-align: center;
+    background-color: #009ffa;
+    color: #ffff
 }
 
 
@@ -113,7 +112,6 @@ figcaption {
     display: grid;
 }
 
-.encabezado,
 .contenido,
 .pie-pagina {
     padding: 1em 2em;
@@ -121,12 +119,8 @@ figcaption {
 
 .contenido,
 .pie-pagina {
-    float: left;
+    float: center;
     box-sizing: border-box;
-}
-
-.encabezado {
-    height: 100px;
 }
 
 .contenido {
@@ -136,27 +130,6 @@ figcaption {
 .pie-pagina {
     width: 100%;
     height: 50px;
-}
-
-@media screen and (min-width: 780px) and (max-width:1024px) {
-    .contenido {
-        width: 50px;
-    }
-}
-
-@media screen and (min-width: 480px) and (max-width:780px) {
-    .contenido {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .encabezado {
-        height: 80px;
-    }
-    .contenido {
-        width: 100%;
-    }
 }
 
 
@@ -190,6 +163,12 @@ figcaption {
     grid-row-gap: 15px;
 }
 
+.nuestrascategorias {
+    text-align: center;
+    padding-top: 60px;
+    font-weight: 400;
+}
+
 #padre {
     justify-items: stretch center;
     align-items: stretch center;
@@ -218,10 +197,6 @@ footer {
     grid-area: footer;
 }
 
-nav {
-    grid-area: nav;
-}
-
 section#productos {
     grid-area: productos;
 }
@@ -233,32 +208,30 @@ section#empresa {
 
 /*Clases BEM */
 
-.encabezado-celeste {
-    text-align: center;
-    background-color: #009ffa;
-    /*padding*/
-    padding: 10px 0;
-    color: #ffff;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-}
-
 .banner_1 {
     background-color: #009ffa;
     text-align: center;
     color: white;
-    border-radius: 10px;
+    padding-top: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: small;
+}
+
+.banner_2 {
+    background-color: #009ffa;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: small;
 }
 
 .contenido img {
     box-shadow: 6px 20px 10px gray;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-
-.encabezado__img--fluid {
-    /*size*/
-    width: 100%;
 }
 
 .galeria img {
@@ -276,7 +249,7 @@ section#empresa {
 }
 
 .footer img {
-    border-radius: 30px;
+    border-radius: 60px;
 }
 
 .novedades__titulo--xxl {
@@ -407,15 +380,12 @@ section#empresa {
 #productos .galeria {
     margin: 20px;
     /*display flex*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 #productos .galeria figure {
     text-align: center;
     width: 25%;
+    display: flex;
 }
 
 #productos .galeria figure img {
@@ -468,7 +438,6 @@ section#empresa {
 --------------------------------------------------------------*/
 
 .productos {
-    background-color: #009ffa;
     color: white;
     text-align: center;
 }
@@ -536,20 +505,6 @@ nav {
     background-color: rgb(255, 255, 255);
 }
 
-nav ol {
-    list-style: none;
-}
-
-nav ol li {
-    font-size: 20px;
-}
-
-nav ol li a {
-    text-decoration: none;
-    color: rgb(19, 4, 87);
-    font-family: 'Raleway', sans-serif;
-}
-
 
 /*Footer*/
 
@@ -565,4 +520,31 @@ nav ol li a {
 
 .copyright {
     text-align: center;
+    background-color: #FFFF;
+    color: #009ffa;
+    border-radius: 10px;
+}
+
+
+/*Media Queries*/
+
+@media screen and (min-width: 780px) and (max-width:1024px) {
+    .contenido {
+        width: 25px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:780px) {
+    .contenido {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .encabezado {
+        height: 80px;
+    }
+    .contenido {
+        width: 100%;
+    }
 }
