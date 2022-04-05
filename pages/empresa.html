@@ -24,58 +24,103 @@
 <body>
     <header class="encabezado">
         <!-- Comienza nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light style=" background-color: #e3f2fd;>
-            <div class="container-fluid ">
-                <a class="navbar-brand " href="index.html ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
                     <img src="../img/logos/logo.png" alt=" " width="70 ">
                 </a>
-                <button class="navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false " aria-label="Toggle navigation ">
-                <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent ">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item ">
-                            <a class="nav-link active " aria-current="page " href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="../pages/empresa.html">Empresa</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/empresa.html">Empresa</a>
                         </li>
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle " href="# " id="navbarDropdown " role="button " data-bs-toggle="dropdown " aria-expanded="false ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Productos
                     </a>
-                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown ">
-                                <li><a class="dropdown-item " href="../pages/cases.html">Cases</a></li>
-                                <li><a class="dropdown-item " href="../pages/cargadores.html">Cargadores</a></li>
-                                <li><a class="dropdown-item " href="../pages/dispositivos.html">Dispositivos</a></li>
-                                <li><a class="dropdown-item " href="../pages/audio.html">Audio</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../pages/cases.html">Cases</a></li>
+                                <li><a class="dropdown-item" href="../pages/cargadores.html">Cargadores</a></li>
+                                <li><a class="dropdown-item" href="../pages/audio.html">Audio</a></li>
+                                <li><a class="dropdown-item" href="../pages/dispositivos.html">Dispositivos</a></li>
                                 <li>
-                                    <hr class="dropdown-divider ">
+                                    <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item " href="# ">Ofertas</a></li>
+                                <li><a class="dropdown-item" href="../pages/promociones.html">Ofertas</a></li>
                             </ul>
                         </li>
-
                     </ul>
-                    <form class="d-flex ">
-                        <input class="form-control me-2 " type="search " placeholder="Busca tu producto aquí.. " aria-label="Search ">
-                        <button class="btn btn-outline-success " type="submit ">Buscar</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
     <!-- Termina nav -->
-    <main>
-        <section>
-            <article>
-                <h1>Nosotros</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores fugit odit necessitatibus in fugiat, ipsam, inventore nihil quo facilis atque aspernatur? Aspernatur corporis atque beatae amet eaque eligendi, corrupti sequi.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorum possimus nobis debitis voluptate cupiditate est ab error, neque blanditiis odio nemo veniam id numquam earum quae officiis cumque! Temporibus?</p>
-            </article>
-        </section>
-    </main>
+
+    <section class="bg-success py-5">
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-md-8 text-white">
+                    <h1>La empresa</h1>
+                    <p>
+                        Reparación rápida y accesible de teléfonos celulares. Cuando su teléfono se rompe, desea que un experto se encargue de la reparación. Ahí es donde entramos nosotros, con más de 5 años de experiencia en la industria de la reparación. <b>TecnoPhone</b>                        puede hacer el trabajo de manera rápida y efectiva.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="../img/sliders/1invi.png" width="500">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Close Banner -->
+
+    <!-- Inicia Servicios -->
+    <section class="container py-5">
+        <div class="row text-center pt-5 pb-3">
+            <div class="col-lg-6 m-auto">
+                <h2 class="h1">Nuestros servicios</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+                    </p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
+                    <h2 class="h5 mt-4 text-center">Reparación de dispositivos</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
+                    <h2 class="h5 mt-4 text-center">Venta y compra de dispositivos</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
+                    <h2 class="h5 mt-4 text-center">Lorem ipsum</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
+                    <h2 class="h5 mt-4 text-center">Servicio de 24 horas</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Termina Servicios -->
 
     <!-- Comienza footer -->
     <footer class="pie-pagina">
