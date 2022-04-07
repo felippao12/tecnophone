@@ -17,7 +17,7 @@
     <!-- Conexion a CSS Boostrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Conexion a CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- Conexion a Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Conexion a ImageHover -->
@@ -27,45 +27,38 @@
 </head>
 
 <body>
-
-    <header>
-        <!-- Comienza nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="../Proyecto/img/logos/logo.png" alt=" " width="70 ">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Comienza nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="../Proyecto/img/logos/logo.png" width="70 ">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Proyecto/pages/empresa.html">Empresa</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="../Proyecto/pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Proyecto/pages/empresa.html">Empresa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Productos
                     </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../Proyecto/pages/cases.html">Cases</a></li>
-                                <li><a class="dropdown-item" href="../Proyecto/pages/cargadores.html">Cargadores</a></li>
-                                <li><a class="dropdown-item" href="../Proyecto/pages/audio.html">Audio</a></li>
-                                <li><a class="dropdown-item" href="../Proyecto/pages/dispositivos.html">Dispositivos</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="../Proyecto/pages/promociones.html">Ofertas</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../Proyecto/pages/cases.html">Cases</a></li>
+                            <li><a class="dropdown-item" href="../Proyecto/pages/audio.html">Audio</a></li>
+                            <li><a class="dropdown-item" href="../Proyecto/pages/cargadores.html">Cargadores</a></li>
+                            <li><a class="dropdown-item" href="../Proyecto/pages/dispositivos.html">Dispositivos</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <!-- Termina nav -->
 
     <!-- Comienza slider -->
@@ -153,10 +146,53 @@
     <section>
         <div>
             <section class="banner_1 ">
-                <h2 class="centerText">¡Ofertas exclusivas hasta agotar stock!</h1>
+                <h3 class="centerText">¡Ofertas exclusivas hasta agotar stock!</h3>
             </section>
         </div>
     </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-row align-items-center time"> <i class="fa fa-clock-o"></i> <small class="ml-1">3 días</small> </div> <img src="https://i.imgur.com/suuFVrQ.png" width="20">
+                        </div>
+                        <div class="text-center"> <img src="https://i.imgur.com/TbtwkyW.jpg" width="250"> </div>
+                        <div class="text-center">
+                            <h5>Amazon Echo</h5> <span class="text-success">$200</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-row align-items-center time"> <i class="fa fa-clock-o"></i> <small class="ml-1 text-primary">00:05:13</small> </div> <img src="https://i.imgur.com/suuFVrQ.png" width="20">
+                        </div>
+                        <div class="text-center"> <img src="https://i.imgur.com/bUWshC0.jpg" width="250"> </div>
+                        <div class="text-center">
+                            <h5>Kruve Coffee Filters</h5> <span class="text-success">$80</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex flex-row align-items-center time"> <i class="fa fa-clock-o"></i> <small class="ml-1">2 días</small> </div> <img src="https://i.imgur.com/suuFVrQ.png" width="20">
+                        </div>
+                        <div class="text-center"> <img src="https://i.imgur.com/aTqSahW.jpg" width="250"> </div>
+                        <div class="text-center">
+                            <h5>Apple watch 2.0</h5> <span class="text-success">$360</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
 
     <!-- Sector Banner publicitario -->
     <section>
@@ -190,7 +226,7 @@
                                 <h3><img src="img/logos/logo_blanco.png " width="100 "> </h3>
                                 <p>
                                     Montevideo,<strong> UY.</strong> <img src="img/logos/Uruguay_flags_flag_8829.png "> <br>
-                                    <strong>Datos de contacto:</strong><br>
+                                    <strong>-Datos de contacto-</strong><br>
                                     <strong>Teléfono:</strong> +598 91 205 055.<br>
                                     <strong>E-mail: </strong>tecnophone1239@gmail.com.<br>
                                 </p>
