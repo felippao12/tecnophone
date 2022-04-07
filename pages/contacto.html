@@ -4,110 +4,93 @@
 <head>
     <title>TecnoPhone</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial scale=1.0" />
     <title>TecnoPhone</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <!-- Icono de pestaña -->
+    <link rel="icon" href="../Proyecto/img/logos/logo.png">
+    <!-- Conexion a CSS Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Conexion a CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Conexion a Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Conexion a ImageHover -->
+    <link rel="stylesheet" href="css/imagehover.min.css">
     <!-- Conexion a CSS BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="encabezado">
-        <!-- Comienza nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="../img/logos/logo.png" alt=" " width="70 ">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/empresa.html">Empresa</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="../pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Productos
-                    </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="../pages/cases.html">Cases</a></li>
-                                <li><a class="dropdown-item" href="../pages/cargadores.html">Cargadores</a></li>
-                                <li><a class="dropdown-item" href="../pages/audio.html">Audio</a></li>
-                                <li><a class="dropdown-item" href="../pages/dispositivos.html">Dispositivos</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="../pages/promociones.html">Ofertas</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Comienza nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logos/logo.png" width="70 ">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/empresa.html">Empresa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="../pages/cases.html">Cases</a></li>
+                            <li><a class="dropdown-item" href="../pages/audio.html">Audio</a></li>
+                            <li><a class="dropdown-item" href="../pages/cargadores.html">Cargadores</a></li>
+                            <li><a class="dropdown-item" href="../pages/dispositivos.html">Dispositivos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <!-- Termina nav -->
-    <main>
-        <section>
-            <article>
-                <h1>Contacto</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores fugit odit necessitatibus in fugiat, ipsam, inventore nihil quo facilis atque aspernatur? Aspernatur corporis atque beatae amet eaque eligendi, corrupti sequi.</p>
-                <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorum possimus nobis debitis voluptate cupiditate est ab error, neque blanditiis odio nemo veniam id numquam earum quae officiis cumque! Temporibus?</p>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <h1>¡Contactate con nosotros!</h1>
-                <!--Abre el formulario-->
-                <form action="envio.php" method="post" id="contacto">
-                    <fieldset>
-                        <legend>Datos personales</legend>
-                        <label for="nombre">Nombre y apellido</label>
-                        <input type="text" placeholder="Felipe Gutierrez Romero" name="Nombre" id="Nombre">
-                        <br>
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="mail@mail.com" name="email" id="email">
-                    </fieldset>
-                    <fieldset>
-                        <legend>Datos de pedido</legend>
-                        <label for="productos">Productos</label>
-                        <input type="checkbox" name="productos" id="productos" value="productos">
-                        <br>
-                        <label for="productos2">Productos 2</label>
-                        <input type="checkbox" name="productos2" id="productos2" value="productos2">
-                    </fieldset>
-                    <fieldset>
-                        <legend> Información de envio</legend>
-                        <label for="envio">Retira en el local</label>
-                        <input type="radio" name="envio" id="local" value="local">
-                        <br>
-                        <label for="domicilio">Envio a domicilio</label>
-                        <input type="radio" name="envio" id="domicilio" value="domicilio">
-                        <br>
-                        <select name="localidad" id="localidad">
-                        <option value="montevideo">Montevideo</option>
-                        <option value="Paysandu">Paysandu</option>
-                        <option value="Salto">Salto</option>
-                    </select>
-                    </fieldset>
-                    <br>
-                    <label></label>
-        </section>
+    <div class="wrapper">
+        <div class="inner">
+            <form action="">
+                <h3>Contáctanos</h3>
+                <p></p>
+                <label class="form-group">
+						<input type="text" class="form-control"  required>
+						<span>Su nombre completo</span>
+						<span class="border"></span>
+					</label>
+                <label class="form-group">
+						<input type="text" class="form-control"  required>
+						<span for="">Su correo electrónico</span>
+						<span class="border"></span>
+					</label>
+                <label class="form-group">
+						<textarea name="" id="" class="form-control" required></textarea>
+						<span for="">Su mensaje</span>
+						<span class="border"></span>
+					</label>
+                <button>Enviar 
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+            </form>
+        </div>
+    </div>
 
 
-    </main>
     <!-- Comienza footer -->
     <footer class="pie-pagina">
         <div class="footer-top ">
@@ -116,9 +99,9 @@
 
                     <div class="col-lg-3 col-md-6 ">
                         <div class="footer-info ">
-                            <h3><img src="img/logos/logo_blanco.png " width="100 "> </h3>
+                            <h3><img src="../img/logos/logo_blanco.png " width="100 "> </h3>
                             <p>
-                                Montevideo,<strong> UY</strong> <img src="img/logos/Uruguay_flags_flag_8829.png"> <br>
+                                Montevideo,<strong> UY</strong> <img src="../img/logos/Uruguay_flags_flag_8829.png"> <br>
                                 <strong>Datos de contacto:</strong><br>
                                 <strong>Teléfono:</strong> +598 9160093<br>
                                 <strong>E-mail: </strong>contacto@webdesignfg.com<br>
