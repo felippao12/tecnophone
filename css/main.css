@@ -172,6 +172,16 @@ figcaption {
     font-size: small;
 }
 
+.contenedor-empresa {
+    background-color: #009ffa;
+}
+
+.formulario {
+    background-image: url("../img/content/backgrounds/17545.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+}
+
 .banner_2 {
     background-color: #009ffa;
     text-align: center;
