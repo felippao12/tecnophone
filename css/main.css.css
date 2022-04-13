@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body {
+    font-family: 'Raleway', sans-serif !important;
+    color: #444444;
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif !important;
+    color: #444444;
+}
+
+h1 {
+    font-family: "Raleway" sans-serif;
+    font-size: 15px;
+    animation-duration: 2s;
+    color: #ffff;
+}
+
+h2 {
+    font-family: "Raleway" sans-serif;
+    align-content: center;
+    font-size: 20px;
+    animation-duration: 5s;
+}
+
+h3 {
+    font-family: "Raleway" sans-serif;
+    align-content: center;
+    animation-duration: 2s;
+}
+
+h4 {
+    font-family: "Raleway" sans-serif;
+    text-align: center;
+    animation-duration: 2s;
+    padding-top: 40px;
+}
+
+h5 {
+    font-family: "Raleway" sans-serif;
+}
+
+h6 {
+    font-family: "Raleway" sans-serif;
+}
+
+p {
+    font-family: "Raleway" sans-serif;
+    animation-duration: 2s;
+}
+
+
+/* selectores de etiqueta*/
+
+ol {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    animation-duration: 2s;
+}
+
+img:hover {
+    animation-duration: 3s;
+}
+
+figcaption {
+    animation-duration: 2s;
+}
+
+.logo p {
+    float: right;
+    padding-right: 70px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444444
+}
+
+.bg-success {
+    background-color: #009ffa;
+}
+
+.logowpp {
+    padding-right: 70px;
+}
+
+.estiloLista li {
+    display: inline;
+    /* esto cambia el valor por defecto de bloque a en linea */
+    padding: 10px;
+    margin: 5px;
+}
+
+.col-md-4 img {
+    margin-bottom: -96px;
+}
+
+.centerText {
+    align-items: center;
+    text-align: center;
+    background-color: #009ffa;
+    color: #ffff
+}
+
+
+/*Clases Responsive Media Querie */
+
+#grilla {
+    display: grid;
+}
+
+.contenido,
+.pie-pagina {
+    padding: 1em 2em;
+}
+
+.contenido,
+.pie-pagina {
+    float: center;
+    box-sizing: border-box;
+}
+
+.contenido {
+    width: 100%;
+}
+
+.pie-pagina {
+    width: 100%;
+    height: 50px;
+}
+
+
+/* Tablet */
+
+
+/* Desktop */
+
+
+/*Clases GRID */
+
+
+/*Termina clases GRID */
+
+footer {
+    grid-area: footer;
+}
+
+section#productos {
+    grid-area: productos;
+}
+
+section#empresa {
+    grid-area: empresa;
+}
+
+
+/*Clases BEM */
+
+.banner_1 {
+    background-color: #009ffa;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: small;
+}
+
+.banner_2 {
+    background-color: #009ffa;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: small;
+}
+
+.contenido img {
+    box-shadow: 6px 20px 10px gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.galeria img {
+    box-shadow: 6px 20px 10px gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-menu {
+    background-color: #009ffa;
+}
+
+.dropdown-item {
+    background-color: #009ffa;
+}
+
+.footer img {
+    border-radius: 60px;
+}
+
+.novedades__titulo--xxl {
+    font-size: 4rem;
+}
+
+.novedades__titulo--xl {
+    font-size: 3rem;
+}
+
+.novedades__titulo--md {
+    font-size: 2rem;
+    /*margin*/
+    margin-bottom: 30px;
+}
+
+.slider-principal {
+    border-radius: 100px;
+}
+
+
+/* Botonera*/
+
+.botonera {
+    background-color: rgb(255, 255, 255);
+    /*position*/
+    position: sticky;
+    top: 0;
+    /*padding*/
+    padding: 10px 30px;
+    /*display flex*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.botonera ol {
+    /*display flex*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.botonera ol li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.botonera ol li a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #009ffa;
+}
+
+.botonera img {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/*hover*/
+
+.botonera ol li a:hover {
+    color: black;
+    font-weight: 600;
+}
+
+
+/*selectores de clase*/
+
+
+/*Box model - width- height - margin - padding - border*/
+
+
+/*Overflox*/
+
+
+/*box-sizing*/
+
+.novedades__articulo {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    padding: 20px 30px;
+    border: solid rgba(238, 188, 247, .5) 2px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.pie {
+    /*padding*/
+    padding: 30px;
+    /*display flex*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie a {
+    text-decoration: none;
+}
+
+.pie__icon--sm {
+    /*size*/
+    width: 30px;
+}
+
+.pie__titulo--md {
+    font-size: 2rem;
+    /*display flex*/
+}
+
+.h2 h6 mb-2 {
+    text-align: center;
+}
+
+
+/* productos */
+
+#productos h1,
+#productos h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Raleway, sans-serif;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#productos .galeria {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    /*display flex*/
+}
+
+#productos .galeria figure {
+    text-align: center;
+    width: 25%;
+    display: flex;
+}
+
+#productos .galeria figure img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#productos .galeria figure figcaption {
+    font-size: 20px;
+    color: #171657;
+    padding: 10px 0;
+    background-color: white;
+}
+
+#productos .galeria p.price {
+    color: #04a31a;
+    padding-bottom: 10px;
+    background-color: white;
+    font-family: Raleway, sans-serif;
+}
+
+
+/* Producto destacado del mes*/
+
+#productos .destacados article {
+    background-color: #BD5EF3;
+    /*display flex*/
+    display: flex;
+    align-items: center;
+}
+
+#productos .destacados article p {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    padding: 50px;
+    margin: 20px auto;
+    color: white;
+}
+
+#productos .destacados article h3 {
+    color: white;
+    font-size: 3rem;
+    padding-left: 50px;
+    font-family: Roboto, sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Productos
+--------------------------------------------------------------*/
+
+.productos {
+    color: white;
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# Sobre nosotros
+--------------------------------------------------------------*/
+
+.sobrenos {
+    padding: 0;
+    margin-top: 40px;
+}
+
+.sobrenos .container {
+    background-color: #f7f8f9;
+    padding: 60px 50px;
+}
+
+@media (max-width: 992px) {
+    .sobrenos .container {
+        padding: 30px;
+    }
+}
+
+.sobrenos .content h3 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #364146;
+    font-family: "Raleway", sans-serif;
+}
+
+.sobrenos .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobrenos .content ul li {
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.sobrenos .content ul i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #28a745;
+}
+
+.sobrenos .content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Fin sobre nosotros seccion
+--------------------------------------------------------------*/
+
+ul li:hover ul {
+    position: absolute;
+    display: block;
+    background-color: blue;
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/*Footer*/
+
+.footer-top {
+    background-color: #009ffa;
+    color: #ffff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.copyright {
+    text-align: center;
+    background-color: #FFFF;
+    color: #009ffa;
+    border-radius: 10px;
+}
+
+
+/*Media Queries*/
+
+@media screen and (min-width: 780px) and (max-width:1024px) {
+    .contenido {
+        width: 25px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:780px) {
+    .contenido {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .encabezado {
+        height: 80px;
+    }
+    .contenido {
+        width: 100%;
+    }
+}
