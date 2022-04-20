@@ -21,19 +21,8 @@
 
 /*Termina imports */
 
-body {
-    font-family: 'Raleway', sans-serif !important;
-    color: #444444;
-    margin: 0;
-}
-
 html {
     font-size: 100%;
-}
-
-body {
-    font-family: 'Raleway', sans-serif !important;
-    color: #444444;
 }
 
 h1 {
@@ -8179,8 +8168,8 @@ fieldset:disabled .btn {
 }
 
 .py-4 {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
 }
 
 .py-5 {
@@ -8193,7 +8182,12 @@ fieldset:disabled .btn {
 }
 
 .py-5 bg-light {
-    background-color: #ffff;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    background-image: url("../img/content/backgrounds/17545.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .pt-0 {
@@ -8527,6 +8521,10 @@ fieldset:disabled .btn {
 .bg-success {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-success py-5 {
+    background-color: #009ffa;
 }
 
 .bg-info {
@@ -11289,9 +11287,7 @@ fieldset:disabled .btn {
     margin-bottom: -12px;
 }
 
-.contenedor-empresa {
-    background-color: #009ffa;
-}
+.contenedor-empresa {}
 
 .formulario {
     background-image: url("../img/content/backgrounds/17545.jpg");
@@ -11397,6 +11393,21 @@ fieldset:disabled .btn {
 
 
 /*hover*/
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 25.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 
 .botonera ol li a:hover {
     color: black;
